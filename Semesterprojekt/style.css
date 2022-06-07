@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hoch {
+    display: none;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(65px, auto);
+    background-color: rgb(223, 248, 254);
+    grid-template-areas: 
+    'head'
+    'main'
+    'foot';
+}
+.burger {
+    display: none;
+}
+.head {
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding-bottom: 5px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+    grid-area: head;
+}
+.head > a {
+    color: black;
+}
+.main {
+    background-color: white;
+    width: 90%;
+    justify-self: center;
+    grid-area: main;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.foot {
+    background-color: rgb(24, 23, 23);
+    grid-area: foot;
+    margin-top: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.foot_text {
+    color: white;
+    display: inline-block;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.link:hover .foot_text {color: #6cc1d2;}
+
+th {
+    background-color: rgb(223, 248, 254);
+    padding: 10px;
+    text-align: left;
+}
+td {
+    background-color: rgba(223, 248, 254, 0.537);
+    padding: 10px;
+}
+.bold {
+    font-weight: 700;
+}
+.gantt2 {
+    display: none;
+}
+.gantt3 {
+    display: none;
+}
+.pdf{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.post-it {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.dropbtn {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #6cc1d250;}
+
+.link {
+    text-decoration: none;
+    word-wrap:break-word;
+}
+.home {
+    height: 50px;
+}
+.methoden {
+    color: black;
+}
+
+.quelle {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.55);
+}
+.logo {
+    width: 40%;
+    margin-left: 30%;
+}
+.video {
+    width: 560px;
+    height: 315px;
+}
+.inline {
+    display: inline;
+}
+
+@media only screen and (orientation: portrait) {
+    .hoch{
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .quer {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .gantt1 {
+        display: none;
+    }
+    .gantt2 {
+        display: block;
+    }
+    .video {
+        width: 420px;
+        height: 236.25px;
+    }
+    .pdf{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .post-it {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .black {
+        font-style: none;
+    }
+    .dropbtn {
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 700px){
+    body{
+        font-size: 0.75rem;
+    }
+    
+    .gantt2 {
+        display: none;
+    }
+    .gantt3 {
+        display: block;
+    }
+    .untereinander {
+        width: 100%;
+    }
+    .post-it {
+        width: 100%;
+        margin-left: 0;
+    }
+    .dropbtn {
+        font-size: 0.75rem;
+        padding: 8px;
+    }
+    .home {
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .dropdown:hover .dropdown-content {display: none;}
+    .home{
+        height: 20px;
+    }
+    .dropbtn {
+        padding: 4px;
+        font-size: 0.6rem;
+    }
+}
+
+    
